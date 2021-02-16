@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hallway2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ghostType"
+        android:layout_width="108dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:text="txt"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ghostHp"
+        android:layout_width="81dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="96dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ghostType" />
+
+    <TextView
+        android:id="@+id/hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
+        android:text="HP:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ghostType" />
+
+    <TextView
+        android:id="@+id/hp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="344dp"
+        android:text="HP:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="SP:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/hp2"
+        app:layout_constraintTop_toBottomOf="@+id/hp2" />
+
+    <TextView
+        android:id="@+id/hpDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/hp2"
+        app:layout_constraintTop_toTopOf="@+id/hp2" />
+
+    <TextView
+        android:id="@+id/spDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/sp"
+        app:layout_constraintTop_toTopOf="@+id/sp" />
+
+    <Button
+        android:id="@+id/btnUlt"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Immaculate Fireworks"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/btnAtk"
+        app:layout_constraintTop_toTopOf="@+id/btnAtk" />
+
+    <Button
+        android:id="@+id/btnBind"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/white"
+        android:text="Sacred Binder"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAtk"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Holy Spritz!"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBind"
+        app:layout_constraintStart_toStartOf="@+id/btnBind" />
+
+    <Button
+        android:id="@+id/btnHeal"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Divine Sanction"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBind"
+        app:layout_constraintStart_toEndOf="@+id/btnBind" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
